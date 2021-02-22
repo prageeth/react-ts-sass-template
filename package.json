@@ -1,0 +1,60 @@
+{
+  "name": "react-ts-sass-template",
+  "description": "React Template for TypeScript and Sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "compile": "webpack --mode=\"production\"",
+    "start": "webpack serve --open --mode=\"development\"",
+    "watch": "webpack --watch",
+    "build": "npm run clean && npm run compile",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier:fix": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prageeth/react-ts-sass-template.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "sass",
+    "template"
+  ],
+  "author": "Prageeth Silva <prageethsilva@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prageeth/react-ts-sass-template/issues"
+  },
+  "homepage": "https://github.com/prageeth/react-ts-sass-template#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "html-webpack-plugin": "^5.2.0",
+    "prettier": "2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  }
+}
